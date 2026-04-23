@@ -10,7 +10,7 @@ class Player{
         this.player.src = "./Images/enemy.png";
         this.player.setAttribute("style", 
             `position:absolute; width:${width}px; height:${height}px;
-             top: 70%; z-index:999;`
+             top: 70%; z-index:1;`
         );
         
     }

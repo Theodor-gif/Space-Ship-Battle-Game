@@ -17,8 +17,8 @@ class Game{
         this.seconds = document.querySelector("#seconds");
 
         this.gameScreen.style.backgroundImage = `url('./Images/background-image2.png')`;
-    
-        this.user = new Player(200, 600, 100, 100);
+        
+        this.user = new Player(this.gameScreen.offsetWidth / 2, 500, 100, 100);
         this.gameScreen.appendChild(this.user.player);
 
         this.enemy = new Enemy(this.gameScreen.offsetWidth);
@@ -160,6 +160,8 @@ class Game{
         clearInterval(this.gameMove);
         clearInterval(this.gameTime);
 
+        this.enemy.enemy.style.display = "none";
+        this.user.player.style.display = "none";
         this.endScreen.style.display = "flex";
         this.finalScore.textContent = `Your score ${this.playerName} is: ${this.score}`;
 
@@ -175,19 +177,19 @@ class Game{
             this.seconds.textContent = "0" + this.playerSeconds;
             this.endScreen.style.display = "none";
             this.startScreen.style.display = "flex";
-            this.user.x = 200;
-            this.user.y = 600;
+            this.user.x = this.gameScreen.offsetWidth / 2;
+            this.user.y = 500;
             this.user.playerPosition();
             this.enemy.top = 0;
             this.enemy.left = Math.floor(Math.random() * this.gameScreen.offsetWidth) + 1;
             this.enemy.positionEnemy();
             this.enemy.enemy.style.display = "none";
-            this.title.style.display = "flex";
+            this.title.style.display = "block";
             this.playerName = "";
             this.userName.textContent = this.playerName;
             this.bulletActive = false;
             this.bullet.bullet.style.display = "none";
-            this.startGame();
+            this.user.player.style.display = "flex";
         })
     };
 };
