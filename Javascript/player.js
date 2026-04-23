@@ -10,7 +10,7 @@ class Player{
         this.player.src = "./Images/enemy.png";
         this.player.setAttribute("style", 
             `position:absolute; width:${width}px; height:${height}px;
-             top: 70%; z-index:1;`
+             top: 70%; z-index:1; display:none;`
         );
         
     }
@@ -21,16 +21,16 @@ class Player{
     playerMove(){
         const drive = this.move;
         if(drive.top){
-            this.y -= 5;
+            this.y -= 7;
         }
         if(drive.down){
             this.y += 5;
         }
         if(drive.left){
-            this.x -= 5;
+            this.x -= 6;
         }
         if(drive.right){
-            this.x += 5;
+            this.x += 6;
         }
 
        

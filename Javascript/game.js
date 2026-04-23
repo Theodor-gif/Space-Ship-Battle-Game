@@ -52,6 +52,7 @@ class Game{
 
         this.startButton.addEventListener("click", () => {
             if(this.userName.value.length > 0){
+                this.user.player.style.display = "flex";
                 this.startScreen.style.display = "none";
                 this.title.style.display = "none";
                 this.playerName = this.userName.value;
@@ -190,6 +191,7 @@ class Game{
             this.bulletActive = false;
             this.bullet.bullet.style.display = "none";
             this.user.player.style.display = "flex";
+            this.user.player.style.display = "none";
         })
     };
 };
