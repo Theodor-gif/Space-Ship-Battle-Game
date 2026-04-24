@@ -1,5 +1,5 @@
 
-# Space Ship Battle
+# Spaceship Battle
 
 ### This is my first project in Ironhack's bootcamp.
 > The project was to create a game using HTML, CSS and JavaScript.
