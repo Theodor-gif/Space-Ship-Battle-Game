@@ -11,9 +11,9 @@
 ***
 
 ### My Project
-> My project is an Early 90's 2D Space Ship Battle game.
+> My project is an Early 90's 2D Spaceship Battle game.
 
-> The Player Character is a Space Ship.
+> The Player Character is a Spaceship.
 
 > The Goals of the game :
  + Avoid the enemy not to lose your lifes.
@@ -22,7 +22,7 @@
 
 ### How to Play
 > Use the arrow keys to move your ship.
-> Press Space to shoot.
+> Press Space bar to shoot.
 
 ### Technologies Used
 > HTML5 | CSS3 / SCSS | JavaScript (OOP)
